@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Main">
+        <div class="Form box"> </div>
+    </div>
+    <h1>Calculate Your Zakat</h1>
+    <h2>Total Cash</h2>
+    <input type="number" id="totalAmount" placeholder="Enter the Net cash">
+<h2>Total Gold</h2>
+<input type="number" id="totalGold" placeholder="Enter your Gold in grams">
+<h2>Total Silver</h2>
+<input type="number" id="totalSilver" placeholder="Enter your Silver in grams">
+<h2>Calculate</h2>
+<button onclick="
+let totalNetCash=document.getElementById('totalAmount').value;
+let totalNetCashD=totalNetCash /40;
+let totalGold= document.getElementById('totalGold').value;
+let totalGoldCash=totalGold*13600/40;
+let totalSilver=document.getElementById('totalSilver').value;
+let totalSilverCash=totalSilver*150/40;
+let totalZakat=totalNetCashD+totalGoldCash+totalSilverCash;
+document.getElementById('heading').innerText=totalZakat;">
+click Here</button>
+<h1 id="heading">0</h1>
+
+
+
+
+
+
+
+
+</body>
+</html>
